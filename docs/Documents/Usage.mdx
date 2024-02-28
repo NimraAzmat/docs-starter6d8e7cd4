@@ -1,7 +1,6 @@
 # Usage
 
 ## 5.1 API Endpoints
-
 - /extract/currency/:timestamp: Endpoint for triggering currency rate updates.
 Description: This API endpoint retrieves currency and crypto exchange rates based on the provided timestamp.
     Request Method: GET
@@ -12,8 +11,7 @@ Description: This API endpoint retrieves currency and crypto exchange rates base
         Crypto Rates: Exchange rates for cryptocurrencies against USD.
     Sample Response:
 
-    json
-
+```json
 {
   "currency": {
     "forex": { /* Forex rates */ },
@@ -24,13 +22,13 @@ Description: This API endpoint retrieves currency and crypto exchange rates base
 URL: http://127.0.0.1:3000/extract/currency/1707138422
 Method: GET
 
-Request Example
+## Request Example
 
 http
 
 GET http://127.0.0.1:3000/extract/currency/1707138422
 
-Response Example
+## Response Example
 
 json
 
@@ -52,7 +50,7 @@ Connection: close
     }
   }
 }
-Documentation:
+## Documentation:
 
     API Endpoint: http://127.0.0.1:3000/extract/currency/1707138422
     
@@ -72,7 +70,7 @@ Postman Setup:
     Click "Send" to execute the request.
     You should see the response similar to what you've received earlier.
 
-Alternative Curl Command:
+## Alternative Curl Command:
 
 bash
 
