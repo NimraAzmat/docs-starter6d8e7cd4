@@ -1,0 +1,7 @@
+# Error Handling
+
+## 6.1 Error Codes and Descriptions
+List of common error codes along with their descriptions and possible causes.
+
+## 6.2 Error Response Format
+Explanation of the format used for error responses including HTTP status codes, error messages, and additional details.
