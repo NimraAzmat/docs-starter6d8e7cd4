@@ -1,0 +1,13 @@
+# System Overview
+
+## 2.1 Project Description
+The Node.js project serves as a currency converter API, utilizing the Open Exchange Rates API to retrieve the latest currency exchange rates. It employs OrbitDB for storing the latest currency data and implements conditional checks to update forex rates every 24 hours and crypto rates every 5 minutes, based on user-provided timestamps.
+
+## 2.2 Technologies Used
+
+- Node.js: JavaScript runtime environment
+- OrbitDB: Peer-to-peer distributed database
+- Open Exchange Rates API: External API for currency exchange rates
+
+## 2.3 Architecture Overview
+The project follows a client-server architecture where the Node.js server acts as the backend API service. Clients make HTTP requests to the server to perform currency conversions, which are processed by fetching data from the Open Exchange Rates API and storing it in OrbitDB.
