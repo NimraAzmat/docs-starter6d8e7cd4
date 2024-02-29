@@ -34,26 +34,7 @@
           "id": "documents/error-handling",
           "label": "Error Handling"
         },
-         {
-          "type": "doc",
-          "id": "documents/security",
-          "label": "Security"
-        },
-         {
-          "type": "doc",
-          "id": "documents/testing",
-          "label": "Testing"
-        },
-         {
-          "type": "doc",
-          "id": "documents/maintenance",
-          "label": "Maintenance"
-        },
-         {
-          "type": "doc",
-          "id": "documents/troubleshooting",
-          "label": "Troubleshooting"
-        },
+         
          {
           "type": "doc",
           "id": "documents/document-conventions",
