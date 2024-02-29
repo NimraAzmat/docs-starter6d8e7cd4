@@ -10,4 +10,6 @@ The Node.js project serves as a currency converter API, utilizing the Open Excha
 - Open Exchange Rates API: External API for currency exchange rates
 
 ## 2.3 Architecture Overview
-The project follows a client-server architecture where the Node.js server acts as the backend API service. Clients make HTTP requests to the server to perform currency conversions, which are processed by fetching data from the Open Exchange Rates API and storing it in OrbitDB.
+The architecture of the project adheres to a client-server paradigm, where the Node.js server serves as the primary backend API service. Clients interact with the server through HTTP requests, initiating currency conversion processes. These requests are meticulously handled by the server, which orchestrates the retrieval of relevant data from the Open Exchange Rates API. Subsequently, the acquired data is persistently stored and managed within OrbitDB, ensuring seamless access and efficient management of currency information.
+
+This architecture not only fosters scalability and maintainability but also guarantees the delivery of accurate and timely currency conversion services to clients. Moreover, the integration of conditional logic enables automated updates of foreign exchange rates on a daily basis and cryptocurrency rates every 5 minutes, meticulously synchronized with user-provided timestamps. This architecture ensures robustness, scalability, and responsiveness in handling currency conversion requests while maintaining data integrity and consistency.
