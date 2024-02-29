@@ -5,7 +5,6 @@
 Before proceeding with the installation process, ensure the following prerequisites are met:
 
 - **Node.js Installed:** Ensure that Node.js is installed on your system. You can download and install Node.js from the [official website](https://nodejs.org/).
-  
 - **IPFS Installed:** Install IPFS, the InterPlanetary File System, which is utilized as the storage solution for OrbitDB. Follow the installation instructions provided on the [IPFS website](https://docs.ipfs.io/how-to/command-line-quick-start/).
 
 ## 3.2 Installation Steps
@@ -17,48 +16,50 @@ To install and set up the project, follow these steps:
 ```bash
 git clone <repository_url>
 cd <project_directory>
-
+```
 
 ## Install Dependencies:
-
+```
 npm install
-
+```
 ### Set Up IPFS:
 
 ### Start the IPFS daemon:
 
-        ipfs daemon
+- ipfs daemon
 
-        Ensure that IPFS is running and accessible.
+- Ensure that IPFS is running and accessible.
 
-    ###Database Creation:
-        Within the project directory, implement code to create OrbitDB databases.
-        Create three databases: one for forex, one for cryptocurrency, and one for currency data.
-        Utilize IPFS as the keystore for OrbitDB to ensure decentralized and secure storage.
+### Database Creation:
 
-    ###Currency Conversion Logic:
-        Implement the currency conversion logic in Node.js.
-        Utilize conditional checks to determine when to update forex and cryptocurrency rates.
-        Upon meeting the update conditions, fetch the latest rates from the Open Exchange Rates API.
-        Update the respective databases with the new rates and ensure data integrity.
+- Within the project directory, implement code to create OrbitDB databases.
+- Create three databases: one for forex, one for cryptocurrency, and one for currency data.
+- Utilize IPFS as the keystore for OrbitDB to ensure decentralized and secure storage.
 
-    ###Merging Data and Updating Currency Database:
-        Merge the updated forex and cryptocurrency rates with the existing currency data.
-        Store the merged data in the currency database managed by OrbitDB.
-        Ensure that the currency database reflects the most recent and accurate exchange rates.
+### Currency Conversion Logic:
+- Implement the currency conversion logic in Node.js.
+-     Utilize conditional checks to determine when to update forex and cryptocurrency rates.
+ -   Upon meeting the update conditions, fetch the latest rates from the Open Exchange Rates API.
+ -    Update the respective databases with the new rates and ensure data integrity.
 
-   ### API Development:
-        Develop an API using Node.js to expose currency conversion endpoints.
-        Implement routes to handle incoming conversion requests.
-        Query the currency database to retrieve the required exchange rates for conversions.
-        Respond to client requests with the converted currency values.
+### Merging Data and Updating Currency Database:
+- Merge the updated forex and cryptocurrency rates with the existing currency data.
+- Store the merged data in the currency database managed by OrbitDB.
+- Ensure that the currency database reflects the most recent and accurate exchange rates.
 
-   ### Testing:
-        Thoroughly test the API endpoints to ensure proper functionality and accuracy of currency conversions.
-        Perform unit tests, integration tests, and end-to-end tests to validate the system's behavior under various scenarios.
+### API Development:
+-  Develop an API using Node.js to expose currency conversion endpoints.
+-  Implement routes to handle incoming conversion requests.
+-  Query the currency database to retrieve the required exchange rates for conversions.
+- Respond to client requests with the converted currency values.
 
-   ### Deployment:
-        Deploy the Node.js server and associated components to a hosting environment.
-        Ensure that the deployed system is accessible and operational.
+### Testing:
+-  Thoroughly test the API endpoints to ensure proper functionality and accuracy of currency conversions.
+-  Perform unit tests, integration tests, and end-to-end tests to validate the system's behavior under various scenarios.
+
+### Deployment:
+- Deploy the Node.js server and associated components to a hosting environment.
+ - Ensure that the deployed system is accessible and operational.
 
 Following these steps will enable you to successfully install, configure, and deploy the currency converter API project, leveraging Node.js, IPFS, and OrbitDB for efficient currency data management and retrieval.
+
