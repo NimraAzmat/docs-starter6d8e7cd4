@@ -11,13 +11,6 @@ Before proceeding with the installation process, ensure the following prerequisi
 
 To install and set up the project, follow these steps:
 
-### Clone the Repository:
-
-```bash
-git clone <repository_url>
-cd <project_directory>
-```
-
 ## Install Dependencies:
 All the project dependencies are in Package.json file that is installed using the following command.
 ```
@@ -32,7 +25,6 @@ npm i
 To start the IPFS daemon, use the following command:
 
 ```bash
-
 ipfs daemon
 ```
 This command initializes the IPFS daemon, which is responsible for managing local IPFS node operations, including content storage, retrieval, and network communication.
@@ -41,7 +33,6 @@ This command initializes the IPFS daemon, which is responsible for managing loca
 To run the IPFS daemon with network traffic routed through the Tor network, use the following command:
 
 ```bash
-
 torsocks ipfs daemon --enable-pubsub-experiment
 ```
 - torsocks: This command is used to route network traffic through the Tor network. It ensures that all network requests made by IPFS are anonymized through Tor, enhancing privacy and security.
@@ -53,7 +44,6 @@ torsocks ipfs daemon --enable-pubsub-experiment
 Before running the IPFS daemon with Tor proxy, ensure that Tor is running on your system. You can start Tor using the following command:
 
 ```bash
-
 sudo tor
 ```
 This command starts the Tor service, which acts as a proxy for routing network traffic through the Tor network. It's necessary to have Tor running to facilitate the anonymization of IPFS traffic through the Tor network.
